@@ -9,18 +9,26 @@
 main {
     height: calc(100vh - 80px);
     background-color: black;
-    padding: 80px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .webcam {
     /* debug */
     background-color: blueviolet;
     border: solid 1px white;
-    height: calc(20% - 10px);
-    width: calc(20% - 10px);
     margin: 5px;
+    min-height: 100px;
+    max-height: 160px;
+    min-width: 270px;
+    max-width: 330px;
+}
+
+.webcam img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* barra di controllo call */
